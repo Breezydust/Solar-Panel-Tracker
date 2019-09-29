@@ -6,11 +6,6 @@
 
 #ifndef WXSTN_H
 #define WXSTN_H
-/** \file wxstn.h
- * \brief Constants, structures, function prototypes for weather station routines
- * \author Paul Moggach
- * \date 29DEC2018
-*/
 
 #include <time.h>
 
@@ -49,7 +44,7 @@ typedef struct readings
 	double winddirection;	///<degrees True
 }reading_s;
 
-///\cond INTERNAL
+
 // Function Prototypes
 int WsInit(void);
 reading_s WsGetReadings(void);
@@ -63,5 +58,4 @@ int WsGetRandom(int range);
 void WsDelay(int milliseconds);
 double PaTomB(double pa);
 void WsDisplayReadings(reading_s dreads);
-///\endcond
 #endif
