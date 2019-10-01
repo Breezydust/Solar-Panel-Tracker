@@ -30,7 +30,7 @@
     int i =0;
 
     StPanelInitialization();
-    printf("\nCENG252 Weather Station");
+    printf("\nWeather Station");
 
     while(1)
     {
